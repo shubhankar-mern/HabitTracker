@@ -1,0 +1,131 @@
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+/* ---- heading ---- */
+.container {
+  width: 550px;
+  min-height: 450px;
+  height: auto;
+  border: 2px solid black;
+  margin: 30px auto;
+  border-radius: 20px;
+  /* box-shadow: 10px 10px 5px gray; */
+  box-shadow: 5px 5px 25px gray;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: rgb(209, 62, 86);
+  border-radius: 4px;
+}
+.heading span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  font-size: 3rem;
+  font-weight: 2rem;
+  font-family: fantasy;
+  /* border: 1px solid black; */
+}
+
+.heading > img {
+  width: 150px;
+  height: 150px;
+}
+/* ---- input ---- */
+form {
+  margin-top: 10px;
+}
+.takeInput {
+  padding: 5px 5px 5px 10px;
+}
+#habitInput {
+  width: 250px;
+  height: 30px;
+  border-radius: 20px;
+}
+#timeInput {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+}
+#btn {
+  width: 70px;
+  height: 33px;
+  border-radius: 20px;
+  background: rgb(237, 6, 6);
+  background: linear-gradient(
+    90deg,
+    rgba(237, 6, 6, 1) 0%,
+    rgba(255, 118, 13, 1) 49%,
+    rgba(255, 171, 0, 0.9780287114845938) 100%
+  );
+}
+
+#btn:hover {
+  cursor: pointer;
+}
+/* ---- display habit ---- */
+ul {
+  list-style: none;
+  padding: 0;
+  height: 400px;
+  overflow-y: auto;
+}
+.habitList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 430px;
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.habit-name {
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+  text-decoration: none;
+  color: gray;
+  overflow: hidden;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.habit-name span {
+  font-size: 25px;
+  padding: 5px 5px 5px 5px;
+}
+.habitList .habit-name:hover {
+  color: #b15151;
+}
+.time {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  padding: 5px 5px 5px 5px;
+
+  font-size: 20px;
+}
+.del {
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  justify-content: flex-end;
+  padding: 5px 5px 5px 5px;
+}
+.del:hover {
+  color: red;
+}
+.warning {
+  /* padding: 5px 5px 5px 5px; */
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  color: red;
+}

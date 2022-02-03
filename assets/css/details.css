@@ -1,0 +1,75 @@
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+}
+/*container*/
+.container {
+  width: 550px;
+  min-height: 450px;
+  height: auto;
+  border: 2px solid black;
+  margin: 30px auto;
+  border-radius: 20px;
+  /* box-shadow: 10px 10px 5px gray; */
+  box-shadow: 5px 5px 25px gray;
+}
+/* ---- heading ---- */
+.heading {
+  align-items: center;
+}
+.heading a {
+  text-decoration: none;
+}
+.back {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 20%;
+}
+
+/* ---- display details of habit --- */
+.top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+.namee {
+  width: 80%;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #14612c;
+  padding: 5px 5px 5px 5px;
+}
+.timee {
+  width: 20%;
+  font-size: 30px;
+
+  color: #56694b;
+  padding: 5px 5px 5px 5px;
+}
+hr {
+  width: 400px;
+  padding: 0.5px 5px 0.5px 5px;
+  color: grey;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
